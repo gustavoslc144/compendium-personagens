@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+   <html lang="pt-BR">
+
+   <head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+       <title>Cadastrar Personagem | Compendium de Personagens</title>
+   </head>
+
+   <body>
+       <header>
+
+          <h1>Compendium de Personagens</h1>
+
+          <nav>
+              <a href="index.html">Personagens</a>
+              <a href="cadastro.html" aria-current="page">Cadastrar</a>
+          </nav>
+
+       </header>
+       <main>
+
+           <section>
+
+                <h2>Cadastrar Personagem</h2>
+
+                <p>
+                    Preencha os dados do personagem.
+                </p>
+
+           </section>
+           <section>
+
+            <h2>Dados do Personagem</h2>
+
+            <form>
+                
+                <label for="nome">Nome</label>
+
+
+                <input
+                    type="text"
+                    id="nome"
+                    name="nome"
+                    placeholder="Digite o nome do personagem"
+                    maxlength="80"
+                    required
+                >
+
+                <label for="descricao">Breve Descrição</label>
+
+                <textarea
+                    id="descricao"
+                    name="descricao"
+                    rows="5"
+                    placeholder="Escreva uma breve descrição do personagem"
+                    maxlength="500"
+                    required
+                ></textarea>
+
+                <label for="genero">Gênero</label>
+
+                <select id="genero" name="genero" required>
+                    <option value="" selected disabled>Selecione o gênero</option>
+                    <option value="masculino">Masculino</option>
+                    <option value="feminino">Feminino</option>
+                    <option value="outro">Outro</option>
+                </select>
+
+                <label for="ambientacao">Ambientação</label>
+
+                <select id="ambientacao" name="ambientacao" required>
+                    <option value="" selected disabled>Selecione a ambientação</option>
+                    <option value="fantasia">Fantasia Medieval</option>
+                    <option value="ficcao-cientifica">Ficção Científica</option>
+                    <option value="terror">Horror</option>
+                    <option value="fantasia-urbana">Fantasia Urbana</option>
+                    <option value="super-herois">Super-Heróis</option>
+                </select>
+
+                <label for="sistema">Sistema de RPG</label>
+
+                <select id="sistema" name="sistema" required>
+                    <option value="" selected disabled>Selecione o sistema</option>
+
+                    <option value="dungeons-and-dragons">Dungeons &amp; Dragons</option>
+
+                    <option value="pathfinder">Pathfinder</option>
+                    <option value="call-of-cthulhu">Call of Cthulhu</option>
+                    <option value="3det">3D&amp;T</option>
+                    <option value="fate">Fate</option>
+                    <option value="fabula-ultima">Fabula Ultima</option>
+                </select>
+
+                <label for="campanha">Nome da Campanha</label>
+
+                <input
+                    type="text"
+                    id="campanha"
+                    name="campanha"
+                    placeholder="Digite o nome da campanha"
+                    maxlength="100"
+                    required
+                >
+
+                <label for="estilo-campanha">Estilo da Campanha</label>
+
+                <select id="estilo-campanha" name="estilo-campanha" required>
+                    <option value="" selected disabled>Selecione o estilo da campanha</option>
+                    <option value="one-shot">One-Shot</option>
+                    <option value="campanha-curta">Campanha Curta</option>
+                    <option value="campanha-longa">Campanha Longa</option>
+                </select>
+
+            </form>
+
+           </section>
+
+       </main>
+   </body>
+
+   </html>
