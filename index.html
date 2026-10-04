@@ -9,7 +9,104 @@
 </head>
 
 <body>
+   <header>
 
+       <h1>Compendium de Personagens</h1>
+
+       <nav>
+           <a href="index.html">Personagens</a>
+           <a href="cadastro.html">Cadastrar</a>
+       </nav>
+
+   </header>
+
+   <main>
+    
+    <section>
+        
+        <h2>Personagens</h2>
+
+        <p>
+            Consulte e organize os personagens cadastrados.
+        </p>
+
+        <a href="cadastro.html">
+            Cadastrar personagem
+        </a>
+    
+    </section>
+
+    <section>
+
+        <h2>Pesquisa e Filtros</h2>
+
+        <form>
+            
+            <label for="pesquisa">Pesquisar Personagem</label>
+
+            <input
+                type="search"
+                id="pesquisa"
+                name="pesquisa"
+                placeholder="Pesquisar por nome, campanha ou sistema"
+            >
+
+            <label for="genero">Gênero</label>
+
+            <select id="genero" name="genero">
+                <option value="">Selecione</option>
+                <option value="masculino">Masculino</option>
+                <option value="feminino">Feminino</option>
+                <option value="outro">Outro</option>
+            </select>
+
+            <label for="ambientacao">Ambientação</label>
+
+            <select id="ambientacao" name="ambientacao">
+                <option value="">Selecione</option>
+                <option value="fantasia-medieval">Fantasia Medieval</option>
+                <option value="ficcao-cientifica">Ficção Científica</option>
+                <option value="horror">Horror</option>
+                <option value="fantasia-urbana">Fantasia Urbana</option>
+                <option value="super-herois">Super-Heróis</option>
+            </select>
+
+            <label for="sistema">Sistema de RPG</label>
+
+            <select id="sistema" name="sistema">
+                <option value="">Selecione</option>
+                <option value="dungeons-and-dragons">Dungeons & Dragons</option>
+                <option value="pathfinder">Pathfinder</option>
+                <option value="call-of-cthulhu">Call of Cthulhu</option>
+                <option value="3det">3D&T</option>
+                <option value="fate">Fate</option>
+                <option value="fabula-ultima">Fabula Ultima</option>
+            </select>
+
+            <label for="estilo-campanha">Estilo da Campanha</label>
+
+            <select id="estilo-campanha" name="estilo-campanha">
+                <option value="">Selecione</option>
+                <option value="one-shot">One-Shot</option>
+                <option value="campanha-curta">Campanha Curta</option>
+                <option value="campanha-longa">Campanha Longa</option>
+            </select>
+
+            <label for="ordenacao">Ordenar por</label>
+
+            <select id="ordenacao" name="ordenacao">
+                <option value="">Selecione</option>
+                <option value="nome-asc">Nome (A-Z)</option>
+                <option value="nome-desc">Nome (Z-A)</option>
+                <option value="campanha">Campanha</option>
+                <option value="sistema">Sistema</option>
+                <option value="data-cadastro-asc">Data de Cadastro (Mais Antigo)</option>
+                <option value="data-cadastro-desc">Data de Cadastro (Mais Recente)</option>
+            </select>
+        </form>
+
+    </section>
+   </main>
 </body>
 
 </html>
